@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/permission"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get Permission"/>
+
+        <Button
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BUTTON"/>
+
+        <Button
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Connect Pen"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:paddingLeft="5dp"
+            android:id="@+id/textView1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="连接状态：未连接蓝牙笔"
+
+            />
+
+        <TextView
+            android:paddingLeft="5dp"
+            android:id="@+id/textView2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="纸张类型：null"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000000" />
+
+    <com.example.bibipentest.view.DrawingView2
+        android:id="@+id/drawing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!--下面放置不了布局-->
+</LinearLayout>
