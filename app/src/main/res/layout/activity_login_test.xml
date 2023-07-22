@@ -4,30 +4,44 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
-    android:background="@drawable/login_background_1"
     android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="bottom|center_horizontal"
-        android:layout_weight="1"
-        >
-        <ImageView
-            android:id="@+id/top_image"
-            android:layout_width="300dp"
-            android:layout_height="300dp"
-            android:src="@drawable/login_picture" />
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top">
+
+            <!-- 第一个视图 -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/login_background_1" />
+
+            <!-- 第二个视图，重叠在第一个视图上 -->
+            <ImageView
+                android:layout_width="500dp"
+                android:layout_height="500dp"
+                android:layout_gravity="center"
+                android:src="@drawable/login_background_2" />
+
+        </FrameLayout>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="10"
-        android:background="@drawable/login_background_layout"
+        android:layout_weight="2"
+        android:orientation="vertical"
         android:gravity="center_horizontal"
         android:padding="20dp"
-        android:orientation="vertical">
+        android:background="@drawable/login_background_layout"
+        >
 
         <TextView
             android:layout_width="wrap_content"
@@ -83,6 +97,7 @@
                 android:textSize="20dp" />
         </LinearLayout>
 
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -95,6 +110,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:text="注册新用户"
+
                 android:textColor="@color/DoderBlue"
                 android:textSize="20dp" />
 
@@ -129,5 +145,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/ic_wechat" />
+
     </LinearLayout>
 </LinearLayout>

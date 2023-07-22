@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- 圆角 -->
-    <corners android:radius="10dp" /><!-- 设置圆角半径 -->
+    <corners android:radius="30dp" /><!-- 设置圆角半径 -->
 
 
     <!-- 填充 -->
@@ -12,6 +12,5 @@
         android:color="@color/black"
         android:dashWidth="0dp"
         android:dashGap="0dp" />
-
 
 </shape>
