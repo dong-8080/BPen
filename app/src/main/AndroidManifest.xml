@@ -21,16 +21,33 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BibiPenTest"
         tools:targetApi="31">
+
+        <!--主页面-->
         <activity
             android:name=".activity.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.BibiPenTest">
+
+        </activity>
+
+        <!--登录页面-->
+        <activity
+            android:name=".activity.LoginActivity"
+            android:exported="true">
+            <!--启动页-->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <!--注册页面-->
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:exported="true">
+
         </activity>
 
         <service

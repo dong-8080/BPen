@@ -1,133 +1,158 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_horizontal"
-    android:background="@drawable/login_background_1"
-    android:orientation="vertical">
+    android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="bottom|center_horizontal"
-        android:layout_weight="1"
-        >
-        <ImageView
-            android:id="@+id/top_image"
-            android:layout_width="300dp"
-            android:layout_height="300dp"
-            android:src="@drawable/login_picture" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="10"
-        android:background="@drawable/login_background_layout"
+        android:layout_height="match_parent"
+        android:background="@drawable/login_background"
         android:gravity="center_horizontal"
-        android:padding="20dp"
         android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="登录"
-            android:textSize="20dp" />
-
         <LinearLayout
+            android:id="@+id/ll_top_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:gravity="center"
-            android:orientation="horizontal">
+            android:gravity="center">
 
-            <TextView
+<!--            <Button-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content" />-->
+
+            <ImageView
+                android:id="@+id/iv_top_image"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="账号："
-                android:textSize="20dp" />
-
-            <EditText
-                android:id="@+id/et_account"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/shape_editbox"
-                android:hint="请输入用户名"
-                android:paddingLeft="5dp"
-                android:textSize="20dp" />
+                android:layout_height="200dp"
+                android:layout_gravity="bottom"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/login_background_picture" />
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/ll_bottom_layout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:paddingTop="10dp">
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="@drawable/login_background_layout"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="20dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="密码："
+                android:text="登录"
                 android:textSize="20dp" />
-            <!--密码要求是数字-->
-            <EditText
-                android:id="@+id/et_password"
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/shape_editbox"
-                android:hint="请输入密码"
-                android:inputType="numberPassword"
-                android:paddingLeft="5dp"
+
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_margin="10dp"
+
+                    android:text="手机号码ID："
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/et_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/shape_editbox"
+                    android:drawableLeft="@drawable/login_ic_username"
+                    android:drawablePadding="20dp"
+                    android:hint="请输入用户名"
+                    android:paddingLeft="20dp"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_margin="10dp"
+                    android:text="密&#12288;&#12288;&#12288;码："
+                    android:textSize="20dp" />
+                <!--密码要求是数字-->
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/shape_editbox"
+                    android:drawableLeft="@drawable/login_ic_password"
+                    android:drawablePadding="20dp"
+                    android:hint="请输入密码"
+                    android:inputType="numberPassword"
+                    android:paddingLeft="20dp"
+                    android:textSize="20dp"
+
+                    />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="注册新用户"
+                    android:textColor="@color/doderBlue"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/tv_forget"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="忘记密码?"
+                    android:textColor="@color/doderBlue"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/shape_button"
+                android:text="登录"
+                android:textColor="@color/white"
                 android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="使用第三方账号登录"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/iv_login_wechat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_wechat" />
         </LinearLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/tv_register"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:text="注册新用户"
-                android:textColor="@color/DoderBlue"
-                android:textSize="20dp" />
-
-            <TextView
-                android:id="@+id/tv_forget"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:text="忘记密码?"
-                android:textColor="@color/DoderBlue"
-                android:textSize="20dp" />
-        </RelativeLayout>
-
-        <Button
-            android:id="@+id/btn_login"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:background="@drawable/shape_button"
-            android:text="登录"
-            android:textColor="@color/white"
-            android:textSize="20dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="right"
-            android:text="使用第三方账号登录"
-            android:textSize="20dp" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/ic_wechat" />
     </LinearLayout>
-</LinearLayout>
+</ScrollView>

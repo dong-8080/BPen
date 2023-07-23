@@ -9,7 +9,7 @@
 
     <stroke
         android:width="2dp"
-        android:color="@color/black"
+        android:color="@color/gray"
         android:dashWidth="0dp"
         android:dashGap="0dp" />
 

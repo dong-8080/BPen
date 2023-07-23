@@ -21,7 +21,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="500dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/login_background_1" />
+                android:src="@drawable/login_background" />
 
             <!-- 第二个视图，重叠在第一个视图上 -->
             <ImageView
@@ -111,7 +111,7 @@
                 android:layout_alignParentLeft="true"
                 android:text="注册新用户"
 
-                android:textColor="@color/DoderBlue"
+                android:textColor="@color/doderBlue"
                 android:textSize="20dp" />
 
             <TextView
@@ -120,7 +120,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:text="忘记密码?"
-                android:textColor="@color/DoderBlue"
+                android:textColor="@color/doderBlue"
                 android:textSize="20dp" />
         </RelativeLayout>
 

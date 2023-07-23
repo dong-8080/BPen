@@ -1,4 +1,4 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="@color/DoderBlue" /> <!-- 设置按钮背景颜色 -->
+    <solid android:color="@color/doderBlue" /> <!-- 设置按钮背景颜色 -->
     <corners android:radius="20dp" /> <!-- 设置按钮的弧度角度，调整radius的值来改变弧度大小 -->
 </shape>
