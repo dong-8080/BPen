@@ -20,13 +20,6 @@
             android:layout_height="wrap_content"
             android:text="Get Permission"/>
 
-        <Button
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:id="@+id/btn1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="BUTTON"/>
 
         <Button
             android:layout_marginLeft="5dp"
@@ -35,6 +28,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Connect Pen"/>
+        <Button
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"/>
+
+
 
     </LinearLayout>
 
@@ -69,7 +71,7 @@
         android:layout_height="2dp"
         android:background="#000000" />
 
-    <com.example.bibipentest.view.DrawingView2
+    <com.example.bibipentest.view.DrawingView
         android:id="@+id/drawing"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
