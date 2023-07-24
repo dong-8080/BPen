@@ -10,3 +10,21 @@ Android笔迹复现项目
 5. 后端通讯
 6. 其他UI设计
 7. 技术文档
+
+
+
+```
+OkHttpUtil网络请求
+```
+
+```
+Result结果类
+```
+
+```
+ResultEnum状态码
+```
+
+```
+ResultUtil结果工具类
+```
