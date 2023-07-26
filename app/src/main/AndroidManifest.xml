@@ -2,42 +2,61 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
-    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
-    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED"
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_PRIVILEGED"
         tools:ignore="ProtectedPermissions" />
+
     <uses-permission-sdk-23 android:name="android.permission.ACCESS_FINE_LOCATION" />
 
-
     <application
+        android:name=".MyApp"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
         android:supportsRtl="true"
-        android:theme="@style/Theme.BibiPenTest"
+        android:theme="@style/AppTheme"
         tools:targetApi="31">
+        <activity
+            android:name=".Main2Activity"
+            android:exported="true"
+            android:label="@string/title_activity_main2" >
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".broadcast.EventTriggerReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.BibiPenTest">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:theme="@style/AppTheme">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+
+
         </activity>
 
         <service
             android:name="com.bbb.bpen.service.BluetoothLEService"
             android:enabled="true"
             android:priority="1000"
-            tools:ignore="WrongManifestParent"/>
+            tools:ignore="WrongManifestParent" />
     </application>
 
 </manifest>

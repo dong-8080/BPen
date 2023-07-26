@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragment.HomeFragment">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:elevation="4dp"
+        app:cardCornerRadius="15dp"
+        app:cardUseCompatPadding="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cardimage1" />
+
+        <TextView
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="待填充文字"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- 第二个 CardView -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/new_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:elevation="4dp"
+        app:cardCornerRadius="15dp"
+        app:cardUseCompatPadding="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cardimage2" />
+
+        <TextView
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新题目"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- 第三个 CardView -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:elevation="4dp"
+        app:cardCornerRadius="15dp"
+        app:cardUseCompatPadding="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cardimage3" />
+
+        <TextView
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="答题历史"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

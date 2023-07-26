@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_rounded_corners"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="蓝牙笔绑定"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="提示信息"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="500dp"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|start"
+            android:hint="MAC地址:">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CFAF08A26A04" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="30dp"
+            android:text="绑定" />
+
+
+    </LinearLayout>
+
+    <!--进度条显示连接进度，暂未实现-->
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/progressBar"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp" />
+
+
+</LinearLayout>
