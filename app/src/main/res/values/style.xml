@@ -4,7 +4,7 @@
 
         <!-- 自定义主题颜色 -->
         <item name="colorPrimary">@color/defaultBlue</item>
-<!--        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
-<!--        <item name="colorAccent">@color/colorAccent</item>-->
+        <item name="colorPrimaryVariant">@color/deepSkyBlue</item>
+        <item name="colorOnPrimary">@color/white</item>
     </style>
 </resources>
