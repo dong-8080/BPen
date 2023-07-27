@@ -23,7 +23,7 @@
             android:layout_width="match_parent"
             android:layout_height="220dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/cardimage1" />
+            android:src="@drawable/test_cardimage1" />
 
         <TextView
             android:paddingLeft="20dp"
@@ -53,7 +53,7 @@
             android:layout_width="match_parent"
             android:layout_height="220dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/cardimage2" />
+            android:src="@drawable/test_cardimage2" />
 
         <TextView
             android:paddingLeft="20dp"
@@ -83,7 +83,7 @@
             android:layout_width="match_parent"
             android:layout_height="220dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/cardimage3" />
+            android:src="@drawable/test_cardimage3" />
 
         <TextView
             android:paddingLeft="20dp"
