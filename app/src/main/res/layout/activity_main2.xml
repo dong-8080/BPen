@@ -12,7 +12,7 @@
 
         android:layout_height="match_parent"
         app:defaultNavHost="true"
-        app:navGraph="@navigation/home_navigation" />
+        app:navGraph="@navigation/navigation_home" />
 
     <!-- 底部切换栏 -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
