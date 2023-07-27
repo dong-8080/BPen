@@ -34,13 +34,9 @@
             android:name=".activity.Main2Activity"
             android:exported="true"
             android:label="@string/title_activity_main2"
-            android:theme="@style/Theme.BibiPenTest">
+            android:theme="@style/AppTheme">
 
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <receiver
@@ -56,18 +52,15 @@
 
         </activity>
 
-        <!--登录页面-->
+        <!--登录模块-->
         <activity
             android:name=".activity.LoginActivity"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-        </activity>
-
-        <!--注册页面-->
-        <activity
-            android:name=".activity.RegisterActivity"
-            android:exported="true">
-
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
         <service
