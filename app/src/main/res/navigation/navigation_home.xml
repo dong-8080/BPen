@@ -22,11 +22,11 @@
             android:id="@+id/action_fragment_main_to_fragment_history"
             app:destination="@id/fragment_history" />
         <action
-            android:id="@+id/action_fragment_main_self2"
+            android:id="@+id/action_fragment_main"
             app:destination="@id/fragment_main"
             app:launchSingleTop="true" />
         <action
-            android:id="@+id/action_fragment_main_to_fragment_personal_center"
+            android:id="@+id/action_fragment_personal_center"
             app:destination="@id/fragment_personal_center" />
 
     </fragment>
@@ -42,7 +42,7 @@
             app:destination="@id/fragment_personal_center"
             app:launchSingleTop="true" />
         <action
-            android:id="@+id/action_fragment_select_grade_to_fragment_main"
+            android:id="@+id/action_fragment_main"
             app:destination="@id/fragment_main"
             app:launchSingleTop="true" />
         <action
@@ -57,11 +57,11 @@
         android:label="fragment_questionnaire"
         tools:layout="@layout/fragment_questionnaire">
         <action
-            android:id="@+id/action_fragment_questionnaire_to_fragment_main"
+            android:id="@+id/action_fragment_main"
             app:destination="@id/fragment_main"
             app:launchSingleTop="true" />
         <action
-            android:id="@+id/action_fragment_questionnaire_to_fragment_personal_center"
+            android:id="@+id/action_fragment_personal_center"
             app:destination="@id/fragment_personal_center"
             app:launchSingleTop="true" />
     </fragment>
@@ -73,11 +73,11 @@
         android:label="fragment_personal_center"
         tools:layout="@layout/fragment_personal_center">
         <action
-            android:id="@+id/action_fragment_personal_center_self"
+            android:id="@+id/action_fragment_personal_center"
             app:destination="@id/fragment_personal_center"
             app:launchSingleTop="true" />
         <action
-            android:id="@+id/action_fragment_personal_center_to_fragment_main"
+            android:id="@+id/action_fragment_main"
             app:destination="@id/fragment_main"
             app:launchSingleTop="true" />
         <action
@@ -95,11 +95,11 @@
         android:label="fragment_history"
         tools:layout="@layout/fragment_history">
         <action
-            android:id="@+id/action_fragment_history_to_fragment_main"
+            android:id="@+id/action_fragment_main"
             app:destination="@id/fragment_main"
             app:launchSingleTop="true" />
         <action
-            android:id="@+id/action_fragment_history_to_fragment_personal_center"
+            android:id="@+id/action_fragment_personal_center"
             app:destination="@id/fragment_personal_center"
             app:launchSingleTop="true" />
     </fragment>
@@ -111,11 +111,11 @@
         android:label="fragment_personal_information"
         tools:layout="@layout/fragment_personal_information">
         <action
-            android:id="@+id/action_fragment_personal_information_to_fragment_main"
+            android:id="@+id/action_fragment_main"
             app:destination="@id/fragment_main"
             app:launchSingleTop="true" />
         <action
-            android:id="@+id/action_fragment_personal_information_to_fragment_personal_center"
+            android:id="@+id/action_fragment_personal_center"
             app:destination="@id/fragment_personal_center"
             app:launchSingleTop="true" />
     </fragment>
@@ -127,7 +127,7 @@
         android:label="PenBindFragment"
         tools:layout="@layout/fragment_pen_bind">
         <action
-            android:id="@+id/action_fragment_pen_bind_to_fragment_main"
+            android:id="@+id/action_fragment_main"
             app:destination="@id/fragment_main"
             app:launchSingleTop="true" />
         <action
