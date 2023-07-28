@@ -9,4 +9,5 @@
     <color name="gainsboro">#808080</color>
     <color name="gray">	#DCDCDC</color>
     <color name="silver">#C0C0C0</color>
+    <color name="crimson">#DC143C</color>
 </resources>

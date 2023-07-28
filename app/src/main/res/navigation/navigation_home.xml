@@ -34,7 +34,7 @@
     <!--选择难度，年级-->
     <fragment
         android:id="@+id/fragment_select_grade"
-        android:name="com.example.bibipentest.fragment.selectGradeFragment"
+        android:name="com.example.bibipentest.fragment.SelectGradeFragment"
         android:label="fragment_select_grade"
         tools:layout="@layout/fragment_select_grade">
         <action
@@ -81,11 +81,11 @@
             app:destination="@id/fragment_main"
             app:launchSingleTop="true" />
         <action
-            android:id="@+id/action_fragment_personal_center_to_fragment_pen_bind"
-            app:destination="@id/fragment_pen_bind" />
-        <action
             android:id="@+id/action_fragment_personal_center_to_fragment_personal_information"
             app:destination="@id/fragment_personal_information" />
+        <action
+            android:id="@+id/action_fragment_personal_center_to_fragment_pen_bind"
+            app:destination="@id/fragment_pen_bind" />
     </fragment>
 
     <!--答题历史-->
@@ -131,7 +131,7 @@
             app:destination="@id/fragment_main"
             app:launchSingleTop="true" />
         <action
-            android:id="@+id/action_fragment_pen_bind_to_fragment_personal_center"
+            android:id="@+id/action_fragment_personal_center"
             app:destination="@id/fragment_personal_center"
             app:launchSingleTop="true" />
     </fragment>

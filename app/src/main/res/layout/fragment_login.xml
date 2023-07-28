@@ -133,8 +133,9 @@
             android:layout_margin="10dp"
             android:background="@drawable/shape_button"
             android:text="登录"
-            android:textColor="@color/white"
             android:textSize="20dp" />
+
+
 
         <TextView
             android:layout_width="wrap_content"

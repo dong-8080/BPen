@@ -7,72 +7,124 @@
     android:orientation="vertical"
     tools:context=".fragment.PersonalCenterFragment">
 
-    <ImageView
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="393dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/test_img_001sub" />
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/background_pic"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
 
-    <TextView
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/pen_bind_pic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:layout_marginLeft="30dp"
+            android:text="设备管理"
+            android:textColor="@color/white"
+            android:textSize="50dp" />
+
+    </FrameLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="当前已绑定以下设备，如需绑定新设备请点击添加按钮" />
+        android:layout_weight="2"
 
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/card_profile_fix"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:clickable="true"
-        android:elevation="4dp"
-        android:focusable="true"
-        android:foreground="?android:attr/selectableItemBackground"
-        app:cardCornerRadius="15dp"
-        app:cardUseCompatPadding="true">
+        android:orientation="vertical">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:orientation="horizontal">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start">
 
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                android:layout_weight="1"
-                android:gravity="center_vertical|start"
-                android:hint="MAC地址:">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/edit_gender"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="CFAF08A26A04" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <Button
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginRight="30dp"
-                android:text="解绑" />
-
-
+                android:layout_gravity="start"
+                android:layout_margin="10dp"
+                android:text="你已经绑定笔啦？"
+                android:textSize="20dp" />
+            <TextView
+                android:id="@+id/tv_back_to_main_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_margin="10dp"
+                android:text="返回主页"
+                android:textColor="@color/defaultBlue"
+                android:textSize="20dp" />
         </LinearLayout>
-    </androidx.cardview.widget.CardView>
 
-    <!-- Confirm Button -->
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_bind_new_pen"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="16dp"
-        android:text="绑定新设备" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="当前已绑定以下设备，如需绑定新设备请点击添加按钮" />
 
 
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_profile_fix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:elevation="4dp"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="15dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|start"
+                    android:hint="MAC地址:">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edit_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="CFAF08A26A04" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="30dp"
+                    android:text="解绑" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Confirm Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_bind_new_pen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:text="绑定新设备" />
+
+
+    </LinearLayout>
 </LinearLayout>

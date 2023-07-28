@@ -3,9 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/app_navigation"
-    app:startDestination="@id/fragment_login"
-    >
-
+    app:startDestination="@id/fragment_login">
+    <!--FIXME 整合多个模块的导航图 -->
     <include app:graph="@navigation/navigation_login" />
     <include app:graph="@navigation/navigation_home" />
 </navigation>
