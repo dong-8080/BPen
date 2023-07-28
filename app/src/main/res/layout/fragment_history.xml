@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:paddingLeft="20dp"
             android:paddingTop="20dp"
-            android:text="答题历史待补充"
+            android:text="2023/7/2 答题历史待补充"
             android:textColor="@color/white"
             android:textSize="25sp" />
 
@@ -58,7 +58,7 @@
             android:layout_height="wrap_content"
             android:paddingLeft="20dp"
             android:paddingTop="20dp"
-            android:text="答题历史待补充"
+            android:text="2023/6/1 答题历史待补充"
             android:textColor="@color/white"
             android:textSize="25sp" />
 

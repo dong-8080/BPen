@@ -6,7 +6,6 @@
     app:startDestination="@id/loginFragment">
 
     <!--加入主页面导航-->
-    <include app:graph="@navigation/navigation_home" />
 
     <fragment
         android:id="@+id/loginFragment"
@@ -22,8 +21,6 @@
         <action
             android:id="@+id/action_loginFragment_to_resetPasswordFragment"
             app:destination="@id/resetPasswordFragment" />
-        <action android:id="@+id/action_loginFragment_to_homeFragment"
-            app:destination="@id/home_navigation" />
     </fragment>
 
     <fragment

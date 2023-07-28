@@ -3,13 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:fitsSystemWindows="true"
+    android:orientation="vertical"
     tools:context=".activity.MainActivity">
-
+    <!--FIXME 废弃-->
     <include
-        layout="@layout/toolbar_layout"
-        android:id="@+id/toolbar"/>
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_layout" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,28 +18,28 @@
 
         <Button
             android:id="@+id/permission"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Get Permission"/>
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="Get Permission" />
 
 
         <Button
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
             android:id="@+id/btn2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Connect Pen"/>
-        <Button
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
+            android:text="Connect Pen" />
+
+        <Button
             android:id="@+id/btn1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Clear"/>
-
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="Clear" />
 
 
     </LinearLayout>
@@ -50,23 +50,22 @@
         android:orientation="horizontal">
 
         <TextView
-            android:paddingLeft="5dp"
             android:id="@+id/textView1"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
+            android:paddingLeft="5dp"
             android:text="连接状态：未连接蓝牙笔"
+            android:textSize="16sp"
 
             />
 
         <TextView
-            android:paddingLeft="5dp"
             android:id="@+id/textView2"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
+            android:paddingLeft="5dp"
             android:text="纸张类型：null"
-            />
+            android:textSize="16sp" />
 
     </LinearLayout>
 
@@ -78,7 +77,7 @@
     <com.example.bibipentest.view.DrawingView
         android:id="@+id/drawing"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
 
     <!--下面放置不了布局-->
 </LinearLayout>

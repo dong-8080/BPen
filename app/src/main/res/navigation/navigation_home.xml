@@ -2,17 +2,17 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/home_navigation"
-    app:startDestination="@id/homeFragment">
+    android:id="@+id/navigation_main"
+    app:startDestination="@id/mainFragment">
 
     <action
         android:id="@+id/action_loginFragment_to_homeFragment"
-        app:destination="@id/homeFragment" />
+        app:destination="@id/mainFragment" />
     <fragment
-        android:id="@+id/homeFragment"
+        android:id="@+id/mainFragment"
         android:name="com.example.bibipentest.fragment.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home">
+        tools:layout="@layout/fragment_main">
         <action
             android:id="@+id/action_homeFragment_to_gradeFragment"
             app:destination="@id/gradeFragment" />
@@ -23,8 +23,8 @@
 
         <action
             android:id="@+id/action_to_homeFragment"
-            app:destination="@id/homeFragment"
-            app:launchSingleTop="true"/>
+            app:destination="@id/mainFragment"
+            app:launchSingleTop="true" />
         <action
             android:id="@+id/action_homeFragment_to_historyFragment"
             app:destination="@id/historyFragment" />
@@ -40,8 +40,8 @@
             app:destination="@id/questionnaireFragment" />
         <action
             android:id="@+id/action_to_homeFragment"
-            app:destination="@id/homeFragment"
-            app:launchSingleTop="true"/>
+            app:destination="@id/mainFragment"
+            app:launchSingleTop="true" />
         <action
             android:id="@+id/action_to_profileFragment2"
             app:destination="@id/profileFragment2"
@@ -55,8 +55,8 @@
         tools:layout="@layout/fragment_questionnaire">
         <action
             android:id="@+id/action_to_homeFragment"
-            app:destination="@id/homeFragment"
-            app:launchSingleTop="true"/>
+            app:destination="@id/mainFragment"
+            app:launchSingleTop="true" />
         <action
             android:id="@+id/action_to_profileFragment2"
             app:destination="@id/profileFragment2"
@@ -70,8 +70,8 @@
         tools:layout="@layout/fragment_profile">
         <action
             android:id="@+id/action_to_homeFragment"
-            app:destination="@id/homeFragment"
-            app:launchSingleTop="true"/>
+            app:destination="@id/mainFragment"
+            app:launchSingleTop="true" />
         <action
             android:id="@+id/action_to_profileFragment2"
             app:destination="@id/profileFragment2"
@@ -87,12 +87,12 @@
         android:id="@+id/historyFragment"
         android:name="com.example.bibipentest.fragment.HistoryFragment"
         android:label="fragment_history"
-        tools:layout="@layout/fragment_history" >
+        tools:layout="@layout/fragment_history">
 
         <action
             android:id="@+id/action_to_homeFragment"
-            app:destination="@id/homeFragment"
-            app:launchSingleTop="true"/>
+            app:destination="@id/mainFragment"
+            app:launchSingleTop="true" />
         <action
             android:id="@+id/action_to_profileFragment2"
             app:destination="@id/profileFragment2"
@@ -105,8 +105,8 @@
         android:label="ProfileFixFragment">
         <action
             android:id="@+id/action_to_homeFragment"
-            app:destination="@id/homeFragment"
-            app:launchSingleTop="true"/>
+            app:destination="@id/mainFragment"
+            app:launchSingleTop="true" />
         <action
             android:id="@+id/action_to_profileFragment2"
             app:destination="@id/profileFragment2"
@@ -119,8 +119,8 @@
         android:label="PenBindFragment">
         <action
             android:id="@+id/action_to_homeFragment"
-            app:destination="@id/homeFragment"
-            app:launchSingleTop="true"/>
+            app:destination="@id/mainFragment"
+            app:launchSingleTop="true" />
         <action
             android:id="@+id/action_to_profileFragment2"
             app:destination="@id/profileFragment2"
