@@ -3,127 +3,136 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation_main"
-    app:startDestination="@id/mainFragment">
+    app:startDestination="@id/fragment_main">
 
     <action
         android:id="@+id/action_loginFragment_to_homeFragment"
-        app:destination="@id/mainFragment" />
+        app:destination="@id/fragment_main" />
+
+    <!--主页-->
     <fragment
-        android:id="@+id/mainFragment"
+        android:id="@+id/fragment_main"
         android:name="com.example.bibipentest.fragment.HomeFragment"
-        android:label="fragment_home"
+        android:label="fragment_main"
         tools:layout="@layout/fragment_main">
         <action
-            android:id="@+id/action_homeFragment_to_gradeFragment"
-            app:destination="@id/gradeFragment" />
+            android:id="@+id/action_fragment_main_to_fragment_select_grade"
+            app:destination="@id/fragment_select_grade" />
         <action
-            android:id="@+id/action_to_profileFragment2"
-            app:destination="@id/profileFragment2"
+            android:id="@+id/action_fragment_main_to_fragment_history"
+            app:destination="@id/fragment_history" />
+        <action
+            android:id="@+id/action_fragment_main_self2"
+            app:destination="@id/fragment_main"
             app:launchSingleTop="true" />
+        <action
+            android:id="@+id/action_fragment_main_to_fragment_personal_center"
+            app:destination="@id/fragment_personal_center" />
 
-        <action
-            android:id="@+id/action_to_homeFragment"
-            app:destination="@id/mainFragment"
-            app:launchSingleTop="true" />
-        <action
-            android:id="@+id/action_homeFragment_to_historyFragment"
-            app:destination="@id/historyFragment" />
     </fragment>
 
+    <!--选择难度，年级-->
     <fragment
-        android:id="@+id/gradeFragment"
-        android:name="com.example.bibipentest.fragment.GradeFragment"
-        android:label="fragment_grade"
-        tools:layout="@layout/fragment_grade">
+        android:id="@+id/fragment_select_grade"
+        android:name="com.example.bibipentest.fragment.selectGradeFragment"
+        android:label="fragment_select_grade"
+        tools:layout="@layout/fragment_select_grade">
         <action
-            android:id="@+id/action_gradeFragment_to_questionnaireFragment"
-            app:destination="@id/questionnaireFragment" />
-        <action
-            android:id="@+id/action_to_homeFragment"
-            app:destination="@id/mainFragment"
+            android:id="@+id/action_fragment_select_grade_to_fragment_personal_center"
+            app:destination="@id/fragment_personal_center"
             app:launchSingleTop="true" />
         <action
-            android:id="@+id/action_to_profileFragment2"
-            app:destination="@id/profileFragment2"
+            android:id="@+id/action_fragment_select_grade_to_fragment_main"
+            app:destination="@id/fragment_main"
             app:launchSingleTop="true" />
+        <action
+            android:id="@+id/action_fragment_select_grade_to_fragment_questionnaire"
+            app:destination="@id/fragment_questionnaire" />
     </fragment>
 
+    <!--答题页-->
     <fragment
-        android:id="@+id/questionnaireFragment"
+        android:id="@+id/fragment_questionnaire"
         android:name="com.example.bibipentest.fragment.QuestionnaireFragment"
         android:label="fragment_questionnaire"
         tools:layout="@layout/fragment_questionnaire">
         <action
-            android:id="@+id/action_to_homeFragment"
-            app:destination="@id/mainFragment"
+            android:id="@+id/action_fragment_questionnaire_to_fragment_main"
+            app:destination="@id/fragment_main"
             app:launchSingleTop="true" />
         <action
-            android:id="@+id/action_to_profileFragment2"
-            app:destination="@id/profileFragment2"
+            android:id="@+id/action_fragment_questionnaire_to_fragment_personal_center"
+            app:destination="@id/fragment_personal_center"
             app:launchSingleTop="true" />
     </fragment>
 
+    <!--个人中心-->
     <fragment
-        android:id="@+id/profileFragment2"
-        android:name="com.example.bibipentest.fragment.ProfileFragment"
-        android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile">
+        android:id="@+id/fragment_personal_center"
+        android:name="com.example.bibipentest.fragment.PersonalCenterFragment"
+        android:label="fragment_personal_center"
+        tools:layout="@layout/fragment_personal_center">
         <action
-            android:id="@+id/action_to_homeFragment"
-            app:destination="@id/mainFragment"
+            android:id="@+id/action_fragment_personal_center_self"
+            app:destination="@id/fragment_personal_center"
             app:launchSingleTop="true" />
         <action
-            android:id="@+id/action_to_profileFragment2"
-            app:destination="@id/profileFragment2"
+            android:id="@+id/action_fragment_personal_center_to_fragment_main"
+            app:destination="@id/fragment_main"
             app:launchSingleTop="true" />
         <action
-            android:id="@+id/action_profileFragment2_to_profileFixFragment"
-            app:destination="@id/profileFixFragment" />
+            android:id="@+id/action_fragment_personal_center_to_fragment_pen_bind"
+            app:destination="@id/fragment_pen_bind" />
         <action
-            android:id="@+id/action_profileFragment2_to_penBindFragment"
-            app:destination="@id/penBindFragment" />
+            android:id="@+id/action_fragment_personal_center_to_fragment_personal_information"
+            app:destination="@id/fragment_personal_information" />
     </fragment>
+
+    <!--答题历史-->
     <fragment
-        android:id="@+id/historyFragment"
+        android:id="@+id/fragment_history"
         android:name="com.example.bibipentest.fragment.HistoryFragment"
         android:label="fragment_history"
         tools:layout="@layout/fragment_history">
-
         <action
-            android:id="@+id/action_to_homeFragment"
-            app:destination="@id/mainFragment"
+            android:id="@+id/action_fragment_history_to_fragment_main"
+            app:destination="@id/fragment_main"
             app:launchSingleTop="true" />
         <action
-            android:id="@+id/action_to_profileFragment2"
-            app:destination="@id/profileFragment2"
-            app:launchSingleTop="true" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/profileFixFragment"
-        android:name="com.example.bibipentest.fragment.ProfileFixFragment"
-        android:label="ProfileFixFragment">
-        <action
-            android:id="@+id/action_to_homeFragment"
-            app:destination="@id/mainFragment"
-            app:launchSingleTop="true" />
-        <action
-            android:id="@+id/action_to_profileFragment2"
-            app:destination="@id/profileFragment2"
+            android:id="@+id/action_fragment_history_to_fragment_personal_center"
+            app:destination="@id/fragment_personal_center"
             app:launchSingleTop="true" />
     </fragment>
 
+    <!--查看，修改个人信息-->
     <fragment
-        android:id="@+id/penBindFragment"
+        android:id="@+id/fragment_personal_information"
+        android:name="com.example.bibipentest.fragment.PersonalInformationFragment"
+        android:label="fragment_personal_information"
+        tools:layout="@layout/fragment_personal_information">
+        <action
+            android:id="@+id/action_fragment_personal_information_to_fragment_main"
+            app:destination="@id/fragment_main"
+            app:launchSingleTop="true" />
+        <action
+            android:id="@+id/action_fragment_personal_information_to_fragment_personal_center"
+            app:destination="@id/fragment_personal_center"
+            app:launchSingleTop="true" />
+    </fragment>
+
+    <!--绑定笔页面-->
+    <fragment
+        android:id="@+id/fragment_pen_bind"
         android:name="com.example.bibipentest.fragment.PenBindFragment"
-        android:label="PenBindFragment">
+        android:label="PenBindFragment"
+        tools:layout="@layout/fragment_pen_bind">
         <action
-            android:id="@+id/action_to_homeFragment"
-            app:destination="@id/mainFragment"
+            android:id="@+id/action_fragment_pen_bind_to_fragment_main"
+            app:destination="@id/fragment_main"
             app:launchSingleTop="true" />
         <action
-            android:id="@+id/action_to_profileFragment2"
-            app:destination="@id/profileFragment2"
+            android:id="@+id/action_fragment_pen_bind_to_fragment_personal_center"
+            app:destination="@id/fragment_personal_center"
             app:launchSingleTop="true" />
     </fragment>
 </navigation>
