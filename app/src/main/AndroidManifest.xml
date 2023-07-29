@@ -36,11 +36,7 @@
             android:exported="true"
             android:label="login_model"
             android:theme="@style/AppTheme" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <!-- 主页面 -->
@@ -49,7 +45,11 @@
             android:exported="true"
             android:label="@string/title_activity_main2"
             android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
         <receiver

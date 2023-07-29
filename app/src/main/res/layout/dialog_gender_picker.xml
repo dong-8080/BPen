@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/radio_group_gender"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RadioButton
+        android:id="@+id/radio_male"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="男性" />
+
+    <RadioButton
+        android:id="@+id/radio_female"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="女性" />
+
+    <RadioButton
+        android:id="@+id/radio_other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="其他" />
+
+    <!-- Add other gender options as needed -->
+
+</RadioGroup>
