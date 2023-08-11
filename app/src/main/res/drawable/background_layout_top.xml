@@ -1,0 +1,52 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@android:color/white" /><!-- 设置背景填充颜色 -->
+    <corners
+        android:topLeftRadius="0dp"
+        android:topRightRadius="0dp"
+        android:bottomLeftRadius="30dp"
+        android:bottomRightRadius="30dp" /> <!-- 设置上方两个角为弧形，下方两个角不是 -->
+    <stroke
+        android:width="2dp"
+        android:color="@android:color/black" /> <!-- 设置边框宽度和颜色 -->
+</shape>
+
+<!--<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+&lt;!&ndash; 添加背景图片 &ndash;&gt;
+<item android:drawable="@drawable/background_pic_1" android:clip="true" />
+
+&lt;!&ndash; 添加边框样式 &ndash;&gt;
+<item>
+    <shape xmlns:android="http://schemas.android.com/apk/res/android">
+        <solid android:color="@android:color/transparent" />
+
+        <corners
+            android:topLeftRadius="0dp"
+            android:topRightRadius="0dp"
+            android:bottomLeftRadius="30dp"
+            android:bottomRightRadius="30dp" />
+        <stroke
+            android:width="2dp"
+            android:color="@android:color/white" />
+    </shape>
+</item>
+</layer-list>-->
+
+<!--<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    &lt;!&ndash; 添加矢量图 &ndash;&gt;
+    <item
+        android:clip="true"
+        android:drawable="@drawable/background_pic" /> &lt;!&ndash; 使用 clip 属性来裁剪超出部分 &ndash;&gt;
+
+    &lt;!&ndash; 添加圆角矩形背景 &ndash;&gt;
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+            <corners android:radius="30dp" />
+            <stroke
+                android:width="2dp"
+                android:color="@android:color/white" />
+        </shape>
+    </item>
+</layer-list>-->
+
+
