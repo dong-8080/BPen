@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="AppTheme" parent="Theme.MaterialComponents.Light">
+    <!--Theme.Material3.DayNight 有标题栏
+    Theme.Material3.DayNight.NoActionBar没有标题栏-->
+    <style name="AppTheme" parent="Theme.Material3.DayNight">
 
         <!-- 自定义主题颜色 -->
         <item name="colorPrimary">@color/defaultBlue</item>
-<!--        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
-<!--        <item name="colorAccent">@color/colorAccent</item>-->
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/deepSkyBlue</item>
+        <item name="colorOnPrimaryContainer">@color/white</item>
+        <!--<item name="colorPrimaryVariant">@color/deepSkyBlue</item>-->
     </style>
 </resources>
