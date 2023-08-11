@@ -11,4 +11,9 @@
         <item name="colorOnPrimaryContainer">@color/white</item>
         <!--<item name="colorPrimaryVariant">@color/deepSkyBlue</item>-->
     </style>
+    <style name="AlertDialogStyle" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:background">@drawable/dialog_rounded_corners</item>
+    </style>
+
 </resources>
