@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string-array name="array_gender">
-        <item>男性</item>
-        <item>女性</item>
-        <item>其他</item>
-        <!-- 添加其他选项 -->
-    </string-array>
-</resources>

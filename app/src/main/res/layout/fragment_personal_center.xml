@@ -51,7 +51,7 @@
             android:elevation="4dp"
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
-            app:cardCornerRadius="15dp"
+            app:cardCornerRadius="30dp"
             app:cardUseCompatPadding="true">
 
             <LinearLayout
@@ -89,7 +89,7 @@
             android:elevation="4dp"
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
-            app:cardCornerRadius="15dp"
+            app:cardCornerRadius="30dp"
             app:cardUseCompatPadding="true">
 
             <LinearLayout
@@ -127,7 +127,7 @@
             android:elevation="4dp"
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
-            app:cardCornerRadius="15dp"
+            app:cardCornerRadius="30dp"
             app:cardUseCompatPadding="true">
 
             <LinearLayout
