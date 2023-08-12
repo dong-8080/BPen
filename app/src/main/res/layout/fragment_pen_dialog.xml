@@ -68,16 +68,17 @@
         android:orientation="horizontal"
         android:layout_height="wrap_content">
         <!--页面跳转，到绑定页面，后面再说-->
+
         <Button
-            android:id="@+id/button3"
-            android:text="蓝牙笔绑定"
+            android:id="@+id/btn_bind_new_pen"
             style="?attr/materialButtonOutlinedStyle"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:text="蓝牙笔绑定" />
 
         <Button
             android:layout_marginLeft="20dp"
-            android:id="@+id/button4"
+            android:id="@+id/btn_close_dialog"
             style="?attr/materialButtonOutlinedStyle"
             android:text="关闭弹窗"
             android:layout_width="wrap_content"
