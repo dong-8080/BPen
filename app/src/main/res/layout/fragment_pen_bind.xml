@@ -39,31 +39,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="start">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="start"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:text="你已经绑定笔啦？"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/tv_back_to_main_page"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="start"
-                android:layout_marginTop="10dp"
-                android:text="返回主页"
-                android:textColor="@color/defaultBlue"
-                android:textSize="20sp" />
-        </LinearLayout>
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -220,15 +195,31 @@
 
         </LinearLayout>
 
-        <!-- Confirm Button -->
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_bind_new_pen"
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="20dp"
-            android:text="绑定新设备"
-            android:textSize="20sp" />
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_bind_new_pen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:text="绑定新设备"
+                android:textSize="20sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_marginLeft="20dp"
+                android:id="@+id/btn_backup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="返回"
+                android:textSize="20sp" />
+        </LinearLayout>
+
 
 
     </LinearLayout>

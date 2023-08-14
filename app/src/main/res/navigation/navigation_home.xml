@@ -64,6 +64,9 @@
             android:id="@+id/action_to_fragment_personal_center"
             app:destination="@id/fragment_personal_center"
             app:launchSingleTop="true" />
+        <action
+            android:id="@+id/action_fragment_questionnaire_to_fragment_pen_bind"
+            app:destination="@id/fragment_pen_bind" />
     </fragment>
 
     <!--个人中心-->
