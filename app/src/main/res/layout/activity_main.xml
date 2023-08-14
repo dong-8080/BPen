@@ -4,10 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <include
-        android:id="@+id/toolbar"
-        layout="@layout/toolbar_layout" />
-
     <!-- 主要内容区域 -->
     <fragment
         android:id="@+id/container"
@@ -23,6 +19,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
+        app:itemIconTint="@drawable/navigation_btn_selected_color"
+        app:labelVisibilityMode="selected"
+        app:itemTextColor="@drawable/navigation_btn_selected_color"
         app:menu="@menu/bottom_navigation_menu" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

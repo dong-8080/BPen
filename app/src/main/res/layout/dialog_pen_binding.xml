@@ -1,61 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/dialog_rounded_corners"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
     android:orientation="vertical">
 
     <TextView
-        android:text="蓝牙笔绑定"
-        android:textSize="20sp"
+        android:id="@+id/textHint"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
-    <TextView
-        android:text="提示信息"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="请输入mac地址并测试连接" />
 
     <LinearLayout
-        android:layout_width="500dp"
-        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
         android:orientation="horizontal">
 
+
         <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
             android:layout_weight="1"
-            android:gravity="center_vertical|start"
-            android:hint="MAC地址:">
+            android:inputType="none"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="MAC地址"
+            android:layout_gravity="center_vertical"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusTopStart="16dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_mac_address"
+                android:inputType="textCapCharacters"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="CFAF08A26A04" />
+                android:text="" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <Button
-            android:id="@+id/btn_bind_pen"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginRight="30dp"
-            android:text="绑定" />
-
-
     </LinearLayout>
 
-    <!--进度条显示连接进度，暂未实现-->
-    <com.google.android.material.progressindicator.LinearProgressIndicator
-        android:id="@+id/progressBar"
-        android:visibility="invisible"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="10dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <!--页面跳转，到绑定页面，后面再说-->
 
+        <Button
+            android:id="@+id/btn_binded"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确认绑定" />
 
+        <Button
+            android:layout_marginLeft="20dp"
+            android:id="@+id/btn_close_dialog"
+            style="?attr/materialButtonOutlinedStyle"
+            android:text="关闭弹窗"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
 </LinearLayout>

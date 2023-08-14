@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_pic"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context=".fragment.LoginFragment"
-    >
+    tools:context=".fragment.LoginFragment">
 
     <LinearLayout
         android:id="@+id/ll_top_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="300dp"
         android:gravity="center">
 
 
@@ -42,75 +42,60 @@
             android:text="登录"
             android:textSize="30dp" />
 
-        <LinearLayout
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="账号:"
+            app:boxCornerRadiusBottomEnd="20dp"
+            app:boxCornerRadiusBottomStart="20dp"
+            app:boxCornerRadiusTopEnd="20dp"
+            app:boxCornerRadiusTopStart="20dp">
 
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="left"
-                android:layout_margin="10dp"
-
-                android:text="手机号码ID："
-                android:textSize="20dp" />
-
-            <EditText
+            <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_account"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:background="@drawable/shape_editbox"
-                android:drawableLeft="@drawable/login_ic_username"
-                android:drawablePadding="20dp"
-                android:hint="请输入账号"
-                android:paddingLeft="20dp"
-                android:textSize="20dp" />
-        </LinearLayout>
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20sp" />
 
-        <LinearLayout
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:paddingTop="10dp">
+            android:layout_margin="20dp"
+            android:hint="密码:"
+            app:boxCornerRadiusBottomEnd="20dp"
+            app:boxCornerRadiusBottomStart="20dp"
+            app:boxCornerRadiusTopEnd="20dp"
+            app:boxCornerRadiusTopStart="20dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="left"
-                android:layout_margin="10dp"
-                android:text="密码："
-                android:textSize="20dp" />
-            <!--密码要求是数字-->
-            <EditText
+            <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_password"
+                android:inputType="textPassword"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:background="@drawable/shape_editbox"
-                android:drawableLeft="@drawable/login_ic_password"
-                android:drawablePadding="20dp"
-                android:hint="请输入密码"
-                android:inputType="numberPassword"
-                android:paddingLeft="20dp"
-                android:textSize="20dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20sp" />
 
-                />
-        </LinearLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:layout_marginTop="10dp"
+            android:gravity="center"
             android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/tv_register"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:paddingLeft="40dp"
                 android:layout_alignParentLeft="true"
                 android:text="注册新用户"
                 android:textColor="@color/doderBlue"
@@ -121,34 +106,33 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
+                android:paddingRight="40dp"
                 android:text="忘记密码?"
                 android:textColor="@color/doderBlue"
                 android:textSize="20dp" />
         </RelativeLayout>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
             android:background="@drawable/shape_button"
             android:text="登录"
             android:textSize="20dp" />
 
-
-
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="right"
+            android:layout_gravity="start"
             android:layout_marginTop="10dp"
-            android:text="使用第三方账号登录"
-            android:textSize="20dp" />
-
-        <ImageView
-            android:id="@+id/iv_login_wechat"
+            android:layout_marginLeft="40dp"
+            android:textSize="15sp"
+            android:text="许可协议"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/ic_wechat_1" />
+            android:layout_height="wrap_content"/>
+
+
     </LinearLayout>
 </LinearLayout>

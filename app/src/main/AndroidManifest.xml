@@ -37,30 +37,27 @@
             android:label="login_model"
             android:theme="@style/AppTheme" >
 
-        </activity>
-
-        <!-- 主页面 -->
-        <activity
-            android:name=".activity.Main2Activity"
-            android:exported="true"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+        </activity>
+
+        <!-- 主页面 -->
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="true"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme">
+
         </activity>
 
         <receiver
             android:name=".broadcast.EventTriggerReceiver"
             android:enabled="true"
             android:exported="true" />
-
-        <activity
-            android:name=".activity.MainActivity"
-            android:exported="true"
-            android:theme="@style/AppTheme" />
 
         <service
             android:name="com.bbb.bpen.service.BluetoothLEService"

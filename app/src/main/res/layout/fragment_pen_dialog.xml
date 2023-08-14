@@ -60,7 +60,7 @@
             android:text="连接" />
 
     </LinearLayout>
-
+    
 
     <LinearLayout
         android:layout_width="wrap_content"

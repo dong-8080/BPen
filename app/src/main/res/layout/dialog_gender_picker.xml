@@ -7,6 +7,7 @@
     >
 
     <RadioGroup
+        android:layout_marginLeft="40dp"
         android:id="@+id/radio_group_gender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -16,21 +17,13 @@
             android:id="@+id/radio_male"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="男性" />
+            android:text="男" />
 
         <RadioButton
             android:id="@+id/radio_female"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="女性" />
-
-        <RadioButton
-            android:id="@+id/radio_other"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="其他" />
-
-        <!-- Add other gender options as needed -->
+            android:text="女" />
 
     </RadioGroup>
 </LinearLayout>
