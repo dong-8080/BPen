@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".fragment.QuestionnaireFragment">
+    tools:context=".fragment.QuestionnaireSelectFragment">
+
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -19,31 +20,18 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|left"
             android:layout_marginLeft="30dp"
-            android:text="答题"
+            android:text="试卷选择"
             android:textColor="@color/white"
             android:textSize="40sp" />
     </FrameLayout>
 
-    <androidx.coordinatorlayout.widget.CoordinatorLayout
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <com.example.bibipentest.view.DrawingView
-            android:id="@+id/drawingView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <com.example.bibipentest.view.MovableFloatingActionButton
-            android:id="@+id/floating_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical|end"
-            android:layout_margin="16dp"
-            app:backgroundTint="@color/defaultBlue"
-            app:elevation="6dp"
-            app:srcCompat="@drawable/pen" />
-
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="3"
+        tools:listitem="@layout/item_recycler_view_image_list" />
 
 
 </LinearLayout>

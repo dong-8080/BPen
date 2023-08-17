@@ -45,7 +45,7 @@
     <!--找回密码页-->
     <fragment
         android:id="@+id/fragment_find_password"
-        android:name="com.example.bibipentest.fragment.FindPasswordFragment"
+        android:name="com.example.bibipentest.fragment.FixPasswordFragment"
         android:label="fragment_find_password"
         tools:layout="@layout/fragment_find_password">
 
