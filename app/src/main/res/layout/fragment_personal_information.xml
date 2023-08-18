@@ -20,7 +20,7 @@
             android:layout_gravity="center_horizontal|center_vertical"
             android:adjustViewBounds="true"
             android:scaleType="fitCenter"
-            android:src="@drawable/personal_center_pic" />
+            android:src="@drawable/infomation_update_pic" />
 
         <TextView
             android:layout_width="wrap_content"
