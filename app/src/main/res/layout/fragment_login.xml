@@ -107,7 +107,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:paddingRight="40dp"
-                android:text="忘记密码?"
+                android:text="修改密码"
                 android:textColor="@color/doderBlue"
                 android:textSize="20dp" />
         </RelativeLayout>
